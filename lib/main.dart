@@ -13,26 +13,26 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
+        title: 'Flutter',
         theme: ThemeData(
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        home: MyHomePage());
+        home: IndexPage());
   }
 }
 
-class MyHomePage extends StatefulWidget {
+class IndexPage extends StatefulWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _IndexPageState createState() => _IndexPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  void fun1() {
-    setState(() {
-      NewLogin();
-    });
-  }
+class _IndexPageState extends State<IndexPage> {
+  // void fun1() {
+  //   setState(() {
+  //     NewLogin();
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    "CONN",
+                    "Company",
                     style: TextStyle(
                         color: Color.fromRGBO(245, 51, 111, 1.0),
                         fontSize: 25,
@@ -72,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         fontFamily: 'Raleway'),
                   ),
                   Text(
-                    "EXION",
+                    "Name",
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 25,
@@ -87,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
               margin: const EdgeInsets.only(top: 5, bottom: 50),
               width: 200,
               child: Text(
-                "Find and meet people around you to find LOVE",
+                "company intro will be here",
                 style: TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.bold,

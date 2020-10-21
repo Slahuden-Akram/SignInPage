@@ -11,9 +11,6 @@ class _NewLoginState extends State<NewLogin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: new AppBar(
-        title: new Text("Login Here"),
-      ),
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -42,7 +39,7 @@ class _NewLoginState extends State<NewLogin> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Text(
-                      "CONN",
+                      "Company",
                       style: TextStyle(
                           color: Color.fromRGBO(245, 51, 111, 1.0),
                           fontSize: 25,
@@ -51,7 +48,7 @@ class _NewLoginState extends State<NewLogin> {
                           fontFamily: 'Raleway'),
                     ),
                     Text(
-                      "EXION",
+                      "Name",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 25,
@@ -66,7 +63,7 @@ class _NewLoginState extends State<NewLogin> {
                 margin: const EdgeInsets.only(top: 5, bottom: 50),
                 width: double.infinity,
                 child: Text(
-                  "Find and meet people around you to find LOVE",
+                  "Company intro will be here",
                   style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.bold,
